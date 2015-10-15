@@ -4,11 +4,10 @@
 int
 main (void)
 {
-    DDRB |= 0b00000001; 
+    DDRB = 0b00000001; 
     
     while(1) 
     {
-        PORTB ^= 0b00000001;
-        // _delay_ms(5000);
+        PORTB = 0b00000001;
     }
 }
